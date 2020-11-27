@@ -1,0 +1,38 @@
+﻿@model StringsViewModel
+<h3>Criteria</h3>
+<hr />
+<form method="post" asp-action="GetLevenshteinDistanceResult" asp-controller="Home">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label asp-for="FirstString"></label>
+                <div><span asp-validation-for="FirstString" class="text-danger"></span></div>
+                <input asp-for="FirstString" class="form-control" />
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label asp-for="SecondString"></label>
+                <div><span asp-validation-for="SecondString" class="text-danger"></span></div>
+                <input asp-for="SecondString" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <div style="display:none;">
+                <button id="btnSubmit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 text-right">
+            <button id="btnComputeDistance" type="button" class="btn btn-primary">Compute Distance</button>
+        </div>
+        <div class="col-xs-6 text-left">
+            <button id="btnRefresh" type="button" class="btn btn-primary">Refresh</button>
+        </div>
+    </div>    
+</form>
+

@@ -1,0 +1,80 @@
+﻿@model LevenshteinDistanceViewModel
+
+@if (Model != null && Model.ResultTable != null)
+{
+    <h3>Result</h3>
+    <hr />
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label asp-for="ResultTable.Cost"></label>
+                <input asp-for="ResultTable.Cost" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            @if (Model.ResultTable.ResultMatrix != null && Model.ResultTable.ResultMatrix.Length > 0)
+            {
+                //get index of last element of first dimension [0] in ResultTable array.
+                int rows = Model.ResultTable.ResultMatrix.GetUpperBound(0);
+
+                //get index of last element of second dimension [1] in ResultTable array.
+                int columns = Model.ResultTable.ResultMatrix.GetUpperBound(1);
+                <div class="table-responsive">
+                    <table id="resultTable" class="table table-bordered">
+                        <tbody>
+                            @{
+                                int offsetColumns = 2;  // Offset is two as first column contains the first string character. From third column second string is printed/displayed in following columns.
+                                int noOfColumns = columns + 2;
+
+                                int offsetRows = 2; // Offset is two as first row contains the second string column wise. From third row first string is printed/displayed one char in one column only.
+                                int secondStringCharPos = 0;
+                                int firstStringCharPos = 0;
+                            }
+                            @if (Model.StringsAsCriteria != null && !string.IsNullOrEmpty(Model.StringsAsCriteria.SecondString))
+                            {
+
+                                <tr>
+                                    @for (int ctr = 0; ctr < noOfColumns; ctr++, offsetColumns--)
+                                    {
+                                        if (offsetColumns > 0)
+                                        {
+                                            <td class="text-center">&nbsp;&nbsp;</td>
+                                        }
+                                        else
+                                        {
+                                            <td class="text-center bg-info">@Model.StringsAsCriteria.SecondString.Substring(secondStringCharPos, 1)</td>
+                                            secondStringCharPos++;
+                                        }
+                                    }
+                                    @{offsetRows--;}
+                                </tr>
+                            }
+
+                            @for (int currentRow = 0; currentRow <= rows; currentRow++, offsetRows--)
+                            {
+                                <tr>
+                                    @if (offsetRows > 0)
+                                    {
+                                        <td class="text-center">&nbsp;&nbsp;</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="text-center bg-info">@Model.StringsAsCriteria.FirstString.Substring(firstStringCharPos, 1)</td>
+                                        firstStringCharPos++;
+                                    }
+                                    @for (int currentColumn = 0; currentColumn <= columns; currentColumn++)
+                                    {
+                                        <td class="text-center">@Model.ResultTable.ResultMatrix[currentRow, currentColumn]</td>
+                                    }
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+}
+

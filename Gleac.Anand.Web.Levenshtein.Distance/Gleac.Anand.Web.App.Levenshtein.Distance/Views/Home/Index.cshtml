@@ -1,0 +1,42 @@
+﻿@model LevenshteinDistanceViewModel
+
+@{
+
+    string sessionJwtToken = null;
+    ViewData["Title"] = "Calulating Levenshtein Distance";
+    if(ViewData["JWTToken"] != null)
+    {
+        sessionJwtToken = ViewData["JWTToken"].ToString();
+    }
+
+}
+@if(!string.IsNullOrEmpty(sessionJwtToken)){ 
+    <!--- LevenshteinDistance criteria Section-->
+    <section id="LDSection">
+        <!-- Area for partial page-->
+        <partial name="LevenshteinDistanceCriteriaPartial" model="Model.StringsAsCriteria" />
+    </section>
+    <!--- LevenshteinDistance result Section-->
+    <section id="LDResult">
+        <!-- Area for partial page-->
+        <partial name="LevenshteinTableResultPartial" model="Model" />
+    </section>
+}
+else
+{
+    <!--- LevenshteinDistance token Section-->
+    <section id="LDToken">
+        <!-- Area for partial page-->
+        <partial name="LevenshteinDistanceTokenPartial" />
+
+    </section>
+}
+
+@section scripts {   
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.log('Jquery is working');
+        ComputeLevenDist.init();
+        });
+    </script>
+}
