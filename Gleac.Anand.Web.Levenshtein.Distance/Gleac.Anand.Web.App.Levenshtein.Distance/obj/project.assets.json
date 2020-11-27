@@ -12551,11 +12551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\A_Workarea\\Repository_Git\\dot-net-stack\\gleac-demo-on-ld\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance.csproj",
+      "projectUniqueName": "C:\\A_Workarea\\Local_Repository_Git\\dot_net_stack\\GLEAC-DEMO-ON-LD\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance.csproj",
       "projectName": "Gleac.Anand.Web.App.Levenshtein.Distance",
-      "projectPath": "C:\\A_Workarea\\Repository_Git\\dot-net-stack\\gleac-demo-on-ld\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance.csproj",
+      "projectPath": "C:\\A_Workarea\\Local_Repository_Git\\dot_net_stack\\GLEAC-DEMO-ON-LD\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance.csproj",
       "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-      "outputPath": "C:\\A_Workarea\\Repository_Git\\dot-net-stack\\gleac-demo-on-ld\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance\\obj\\",
+      "outputPath": "C:\\A_Workarea\\Local_Repository_Git\\dot_net_stack\\GLEAC-DEMO-ON-LD\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Web.App.Levenshtein.Distance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12574,8 +12574,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\A_Workarea\\Repository_Git\\dot-net-stack\\gleac-demo-on-ld\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance.csproj": {
-              "projectPath": "C:\\A_Workarea\\Repository_Git\\dot-net-stack\\gleac-demo-on-ld\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance.csproj"
+            "C:\\A_Workarea\\Local_Repository_Git\\dot_net_stack\\GLEAC-DEMO-ON-LD\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance.csproj": {
+              "projectPath": "C:\\A_Workarea\\Local_Repository_Git\\dot_net_stack\\GLEAC-DEMO-ON-LD\\Gleac.Anand.Web.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance\\Gleac.Anand.Levenshtein.Distance.csproj"
             }
           }
         }
