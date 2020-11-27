@@ -56,7 +56,7 @@ using Gleac.Anand.Web.App.Levenshtein.Distance.Models;
             WriteLiteral("<h3>Token</h3>\r\n<hr />\r\n<div class=\"row\">\r\n    <div class=\"col-xs-12 text-center\">\r\n        ");
             EndContext();
             BeginContext(92, 114, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb8ce5cc05c0417c8c9caf39a1984ea7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "778573bb9a1d4ea8919ba5636de857e9", async() => {
                 BeginContext(164, 38, true);
                 WriteLiteral("Setup token and access the application");
                 EndContext();

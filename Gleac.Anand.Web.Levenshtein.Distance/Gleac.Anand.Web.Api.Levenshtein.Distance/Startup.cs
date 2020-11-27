@@ -64,7 +64,7 @@ namespace Gleac.Anand.Web.Api.Levenshtein.Distance
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseSession();
-            app.UseMvc();  // Added the comment to test GIT
+            app.UseMvc();  // Added the comment to test GIT // Adding comment again to test GIT
         }
     }
 }
