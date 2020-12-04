@@ -77,7 +77,7 @@ using Gleac.Anand.Web.App.Levenshtein.Distance.Models;
             WriteLiteral("    <!--- LevenshteinDistance criteria Section-->\r\n    <section id=\"LDSection\">\r\n        <!-- Area for partial page-->\r\n        ");
             EndContext();
             BeginContext(433, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cf7596dab6db42ebbc277ac8ed0fe8fd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4ede5441ed264edd8f696f4a5a80fbb2", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -102,7 +102,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = Model.StringsAsCr
             WriteLiteral("\r\n    </section>\r\n    <!--- LevenshteinDistance result Section-->\r\n    <section id=\"LDResult\">\r\n        <!-- Area for partial page-->\r\n        ");
             EndContext();
             BeginContext(661, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "af62ab21b0e24c2391d633394bfd9d29", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e3232874a8ff463e800e069c97e77ab7", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -137,7 +137,7 @@ else
             WriteLiteral("    <!--- LevenshteinDistance token Section-->\r\n    <section id=\"LDToken\">\r\n        <!-- Area for partial page-->\r\n        ");
             EndContext();
             BeginContext(876, 50, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b265c0a69c074dd488e3dfb1d512407f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3607ac2f380c407f8f1341268f4a4d79", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
